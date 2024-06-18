@@ -1,0 +1,160 @@
+body {
+  background-image: url(Imgs/background.png);
+  background-size: 100vw 100vh;
+}
+
+#scacchiera {
+  width: fit-content;
+  height: fit-content;
+  border-collapse: collapse;
+}
+
+#scacchiera,
+#scacchiera td {
+  border: 5px solid #fff;
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+  background-color: #549bf7;
+}
+
+#titolo {
+  text-align: center;
+}
+
+img {
+  visibility: hidden;
+  width: 120px;
+  height: 120px;
+}
+
+#scacchiera td.show img {
+  visibility: visible;
+}
+
+#scacchiera td.g1 {
+  background-color: blue;
+}
+
+#scacchiera td.g2 {
+  background-color: #0f0;
+}
+
+#scacchiera td.g1 img {
+  visibility: visible;
+}
+
+#scacchiera td.g2 img {
+  visibility: visible;
+}
+
+#velo {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 10;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+#testoVelo {
+  font-size: 50px;
+  color: #fff;
+}
+
+#popUp {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ccc;
+  width: 300px;
+  height: 150px;
+  color: #000;
+  text-align: center;
+  border: #000;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #000;
+  z-index: 11;
+}
+
+#turno {
+  font-size: 30px;
+  text-align: center;
+  color: #00f;
+}
+
+#record input {
+  margin-bottom: 5px;
+}
+
+#scoreBoard {
+  width: 200px;
+  height: 98%;
+  background-color: #549bf7;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+}
+#spacer {
+  width: 200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#container {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#scores {
+  width: 100%;
+  height: 86%;
+  background-color: #549bf79f;
+  border-top: 3px solid #fff;
+  box-sizing: border-box;
+}
+
+#score,
+#score td {
+  margin: 0;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+}
+
+#score td {
+  font-size: 20px;
+  color: #fff;
+}
+
+td.sB {
+  border: unset;
+}
+
+.first {
+  background-color: gold;
+}
+.second {
+  background-color: silver;
+}
+.third {
+  background-color: #cd7f32;
+}
+
+tr #noScores {
+  text-align: center;
+  color: #c00;
+  border: 1px double #c00;
+  box-sizing: border-box;
+}

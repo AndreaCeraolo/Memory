@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body onload="loadScore()">
+    <h1 id="titolo">Memory</h1>
+    <h2 id="turno">Turno Giocatore 1</h2>
+    <div id="popUp">
+      <p id="vittoria"></p>
+      <form action="ajax_record.php" id="record">
+        <label for="player">Player</label>
+        <input type="text" id="player" name="player" size="3" /><br />
+        <label for="score">Score</label>
+        <input
+          type="number"
+          id="score"
+          name="score"
+          style="width: 50px"
+        /><br />
+        <input type="button" value="Invia" onclick="checkData()" />
+      </form>
+    </div>
+    <div id="velo">
+      <div id="testoVelo"></div>
+    </div>
+    <div id="container">
+      <div id="scoreBoard">
+        <h2 style="text-align: center">Score Board</h2>
+        <div id="scores"></div>
+      </div>
+      <table id="scacchiera">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <div id="spacer"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
